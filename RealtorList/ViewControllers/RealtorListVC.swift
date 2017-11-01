@@ -8,6 +8,12 @@
 
 import UIKit
 
-class RealtorListVC: UIViewController {
+class RealtorListVC: UIViewController, BindableType {
+    
+    var viewModel: RealtorListVM!
+    
+    func bindViewModel() {
+        
+    }
     
 }
