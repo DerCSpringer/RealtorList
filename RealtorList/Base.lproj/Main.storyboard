@@ -64,7 +64,6 @@
         <!--DetailsVC-->
         <scene sceneID="Tri-oi-GKm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i5u-fb-cCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="8am-7T-IP2" customClass="DetailsVC" customModule="RealtorList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WEE-VK-UBn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -121,13 +120,14 @@
                         <outlet property="photo" destination="2a6-f3-nYR" id="d0f-DV-Z99"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5u-fb-cCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2076" y="630.13493253373315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C4z-f2-7ka">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N7L-mV-0Nf" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RealtorListVC" automaticallyAdjustsScrollViewInsets="NO" id="N7L-mV-0Nf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="68N-Re-xHN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -145,7 +145,7 @@
         <!--Navigation Controller-->
         <scene sceneID="snx-Zq-ZKY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0IR-5s-Z8k" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="0IR-5s-Z8k" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IJg-xm-KfB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
