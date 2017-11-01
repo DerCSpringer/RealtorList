@@ -8,12 +8,30 @@
 
 import UIKit
 
-class RealtorListVC: UIViewController, BindableType {
+class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
+
+    @IBOutlet weak var tableView: UITableView!
+    
     
     var viewModel: RealtorListVM!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.dataSource = self
+    }
+    
     func bindViewModel() {
+        viewModel.didUpdate = { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.realtorList.count
     }
     
 }

@@ -12,7 +12,8 @@ class RealtorListVM {
     
     private let sceneCoordinator: SceneCoordinatorType
     private let fetchingService: RealtorInfoAPI
-    let realtorList = [Realtor]()
+    private(set) var realtorList = [Realtor]()
+    var didUpdate: (() -> Void)?
     
     init(fetchingService: RealtorInfoAPI, sceneCoordinator: SceneCoordinatorType) {
         self.sceneCoordinator = sceneCoordinator
@@ -21,11 +22,11 @@ class RealtorListVM {
     }
     
     private func fetchRealtors() {
-        
         self.fetchingService.getData { result in
             switch result {
             case .Success(let realtors):
-                print(realtors)
+                self.realtorList = realtors
+                self.didUpdate!()
             case .Error(let error):
                 print(error)
             }
