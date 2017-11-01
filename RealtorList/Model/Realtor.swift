@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Realtor {
+struct Realtor: Decodable {
     // Looks like lastName can be null or "".  Make sure to correct for this
     // There is one title with "", so also check for that
     let firstName: String
