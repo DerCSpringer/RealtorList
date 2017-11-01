@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0IR-5s-Z8k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,10 +61,11 @@
             </objects>
             <point key="canvasLocation" x="2076" y="-89"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="Tri-oi-GKm">
             <objects>
-                <viewController id="8am-7T-IP2" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5u-fb-cCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="8am-7T-IP2" customClass="DetailsVC" customModule="RealtorList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WEE-VK-UBn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,8 +114,13 @@
                         <viewLayoutGuide key="safeArea" id="raT-0x-ce8"/>
                     </view>
                     <navigationItem key="navigationItem" id="xzy-VS-2pT"/>
+                    <connections>
+                        <outlet property="companyTitle" destination="uiq-iK-6SF" id="ZIC-T4-X0O"/>
+                        <outlet property="name" destination="39R-b9-Ha5" id="HK2-IF-C1X"/>
+                        <outlet property="phoneNumber" destination="laJ-ZL-JR0" id="jaz-Ut-X0D"/>
+                        <outlet property="photo" destination="2a6-f3-nYR" id="d0f-DV-Z99"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i5u-fb-cCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2076" y="630.13493253373315"/>
         </scene>

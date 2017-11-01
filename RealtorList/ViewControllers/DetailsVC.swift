@@ -10,4 +10,14 @@ import UIKit
 
 class DetailsVC: UIViewController {
     
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var companyTitle: UILabel!
+    
+    override func viewDidLoad() {
+        self.photo.layer.cornerRadius = self.photo.frame.size.width / 2
+        self.photo.clipsToBounds = true
+    }
+    
 }
