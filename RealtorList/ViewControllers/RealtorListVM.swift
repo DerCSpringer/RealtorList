@@ -10,4 +10,12 @@ import Foundation
 
 class RealtorListVM {
     
+    private let sceneCoordinator: SceneCoordinatorType
+    private let fetchingService: RealtorInfoAPI
+    
+    init(fetchingService: RealtorInfoAPI, sceneCoordinator: SceneCoordinatorType) {
+        self.sceneCoordinator = sceneCoordinator
+        self.fetchingService = fetchingService
+    }
+    
 }

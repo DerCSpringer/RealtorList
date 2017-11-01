@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let sceneCoordinator = SceneCoordinator(window: window!)
+        let realtorInfoAPI = RealtorInfoAPI()
+        let realtorListVM = RealtorListVM(fetchingService: realtorInfoAPI, sceneCoordinator: sceneCoordinator)
+        sceneCoordinator.transition(to: .realtorList(realtorListVM), type: .root)
         return true
     }
 
