@@ -9,5 +9,6 @@
 import Foundation
 
 enum Scene {
-    
+    case realtorList(RealtorListVM)
+    case detailsForRealtor(DetailsVM)
 }
