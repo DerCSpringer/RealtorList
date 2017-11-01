@@ -8,9 +8,7 @@
 
 import UIKit
 
-class RealtorCell: UITableViewCell {
-    
-}
+class RealtorCell: UITableViewCell { }
 
 extension RealtorCell {
     func configureWithRealtor(_ realtor: Realtor) {
