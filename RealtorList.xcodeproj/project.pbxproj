@@ -13,6 +13,8 @@
 		0B3F18A21FAA529300EE3033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F18A11FAA529300EE3033 /* Assets.xcassets */; };
 		0B3F18A51FAA529300EE3033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F18A31FAA529300EE3033 /* LaunchScreen.storyboard */; };
 		0B3F18AD1FAA531500EE3033 /* Realtor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18AC1FAA531500EE3033 /* Realtor.swift */; };
+		0B3F18B01FAA5BC900EE3033 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */; };
+		0B3F18B21FAA5BD700EE3033 /* DetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0B3F18A41FAA529300EE3033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B3F18A61FAA529300EE3033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B3F18AC1FAA531500EE3033 /* Realtor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realtor.swift; sourceTree = "<group>"; };
+		0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				0B3F189C1FAA529300EE3033 /* ViewController.swift */,
 				0B3F18AE1FAA534000EE3033 /* Model */,
 				0B3F189E1FAA529300EE3033 /* Main.storyboard */,
+				0B3F18B31FAA5BDE00EE3033 /* ViewControllers */,
 				0B3F18A11FAA529300EE3033 /* Assets.xcassets */,
 				0B3F18A31FAA529300EE3033 /* LaunchScreen.storyboard */,
 				0B3F18A61FAA529300EE3033 /* Info.plist */,
@@ -73,6 +78,15 @@
 				0B3F18AC1FAA531500EE3033 /* Realtor.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0B3F18B31FAA5BDE00EE3033 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */,
+				0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B3F18AD1FAA531500EE3033 /* Realtor.swift in Sources */,
+				0B3F18B01FAA5BC900EE3033 /* DetailsVC.swift in Sources */,
 				0B3F189D1FAA529300EE3033 /* ViewController.swift in Sources */,
 				0B3F189B1FAA529300EE3033 /* AppDelegate.swift in Sources */,
+				0B3F18B21FAA5BD700EE3033 /* DetailsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
