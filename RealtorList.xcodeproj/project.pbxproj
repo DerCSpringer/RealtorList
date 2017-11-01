@@ -15,6 +15,8 @@
 		0B3F18AD1FAA531500EE3033 /* Realtor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18AC1FAA531500EE3033 /* Realtor.swift */; };
 		0B3F18B01FAA5BC900EE3033 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */; };
 		0B3F18B21FAA5BD700EE3033 /* DetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */; };
+		0B3F18B51FAA5E3E00EE3033 /* RealtorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18B41FAA5E3E00EE3033 /* RealtorListVC.swift */; };
+		0B3F18B71FAA5E4E00EE3033 /* RealtorListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18B61FAA5E4E00EE3033 /* RealtorListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0B3F18AC1FAA531500EE3033 /* Realtor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realtor.swift; sourceTree = "<group>"; };
 		0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVM.swift; sourceTree = "<group>"; };
+		0B3F18B41FAA5E3E00EE3033 /* RealtorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtorListVC.swift; sourceTree = "<group>"; };
+		0B3F18B61FAA5E4E00EE3033 /* RealtorListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtorListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				0B3F18AF1FAA5BC900EE3033 /* DetailsVC.swift */,
 				0B3F18B11FAA5BD700EE3033 /* DetailsVM.swift */,
+				0B3F18B41FAA5E3E00EE3033 /* RealtorListVC.swift */,
+				0B3F18B61FAA5E4E00EE3033 /* RealtorListVM.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 			files = (
 				0B3F18AD1FAA531500EE3033 /* Realtor.swift in Sources */,
 				0B3F18B01FAA5BC900EE3033 /* DetailsVC.swift in Sources */,
+				0B3F18B51FAA5E3E00EE3033 /* RealtorListVC.swift in Sources */,
 				0B3F189D1FAA529300EE3033 /* ViewController.swift in Sources */,
+				0B3F18B71FAA5E4E00EE3033 /* RealtorListVM.swift in Sources */,
 				0B3F189B1FAA529300EE3033 /* AppDelegate.swift in Sources */,
 				0B3F18B21FAA5BD700EE3033 /* DetailsVM.swift in Sources */,
 			);
