@@ -12,7 +12,6 @@ class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     var viewModel: RealtorListVM!
     
     override func viewDidLoad() {
@@ -22,12 +21,16 @@ class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
     
     func bindViewModel() {
         viewModel.didUpdate = { [weak self] in
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "realtorCell", for: indexPath) as! RealtorCell
+        cell.configureWithRealtor(viewModel.realtorList[indexPath.row])
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
