@@ -25,6 +25,7 @@
 		0B3F18C41FAA5F2500EE3033 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18C31FAA5F2500EE3033 /* BindableType.swift */; };
 		0B3F18C61FAA630900EE3033 /* RealtorInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18C51FAA630900EE3033 /* RealtorInfoAPI.swift */; };
 		0B3F18C91FAA864500EE3033 /* RealtorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F18C81FAA864500EE3033 /* RealtorCell.swift */; };
+		A9F75B8AE70B207FAB7A9A17 /* Pods_RealtorList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A148D8BA53CE9869F46BE3E /* Pods_RealtorList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,9 @@
 		0B3F18C31FAA5F2500EE3033 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		0B3F18C51FAA630900EE3033 /* RealtorInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtorInfoAPI.swift; sourceTree = "<group>"; };
 		0B3F18C81FAA864500EE3033 /* RealtorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtorCell.swift; sourceTree = "<group>"; };
+		7A148D8BA53CE9869F46BE3E /* Pods_RealtorList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtorList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B823A320D4F5611555C7167A /* Pods-RealtorList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtorList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealtorList/Pods-RealtorList.debug.xcconfig"; sourceTree = "<group>"; };
+		E26FF0C2F779BF43B5260510 /* Pods-RealtorList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtorList.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealtorList/Pods-RealtorList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F75B8AE70B207FAB7A9A17 /* Pods_RealtorList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				0B3F18991FAA529300EE3033 /* RealtorList */,
 				0B3F18981FAA529300EE3033 /* Products */,
+				AF46DDB10B557780A0B4C28C /* Pods */,
+				A15A507C24BFACC93B81565A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		A15A507C24BFACC93B81565A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A148D8BA53CE9869F46BE3E /* Pods_RealtorList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF46DDB10B557780A0B4C28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B823A320D4F5611555C7167A /* Pods-RealtorList.debug.xcconfig */,
+				E26FF0C2F779BF43B5260510 /* Pods-RealtorList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B3F18A91FAA529300EE3033 /* Build configuration list for PBXNativeTarget "RealtorList" */;
 			buildPhases = (
+				C3BD6EACC49E60110D9A4FDB /* [CP] Check Pods Manifest.lock */,
 				0B3F18931FAA529300EE3033 /* Sources */,
 				0B3F18941FAA529300EE3033 /* Frameworks */,
 				0B3F18951FAA529300EE3033 /* Resources */,
+				8A8B669A9915C1372447A8EA /* [CP] Embed Pods Frameworks */,
+				A4777E07CE639A756955EFDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +236,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8B669A9915C1372447A8EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RealtorList/Pods-RealtorList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealtorList/Pods-RealtorList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4777E07CE639A756955EFDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealtorList/Pods-RealtorList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BD6EACC49E60110D9A4FDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealtorList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B3F18931FAA529300EE3033 /* Sources */ = {
@@ -364,6 +445,7 @@
 		};
 		0B3F18AA1FAA529300EE3033 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B823A320D4F5611555C7167A /* Pods-RealtorList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +461,7 @@
 		};
 		0B3F18AB1FAA529300EE3033 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26FF0C2F779BF43B5260510 /* Pods-RealtorList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
