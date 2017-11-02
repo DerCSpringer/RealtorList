@@ -30,12 +30,12 @@ class RealtorListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "realtorCell", for: indexPath) as! RealtorCell
-        cell.configureWithRealtor(viewModel.realtorList[indexPath.row])
+        cell.configureWithRealtor(viewModel.realtorAtIndexPath(indexPath))
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.realtorList.count
+        return viewModel.realtorCount()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

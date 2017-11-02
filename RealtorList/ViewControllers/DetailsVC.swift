@@ -17,12 +17,10 @@ class DetailsVC: UIViewController, BindableType {
     
     var viewModel: DetailsVM!
     
-    override func viewDidLoad() {
-    }
-    
     @IBAction func done(_ sender: UIBarButtonItem) {
         viewModel.pop()
     }
+    
     func bindViewModel() {
         self.photo.kf.setImage(with: viewModel.photo)
         self.name.text = viewModel.name

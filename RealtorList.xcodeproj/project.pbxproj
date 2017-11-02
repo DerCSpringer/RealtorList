@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B3F189B1FAA529300EE3033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F189A1FAA529300EE3033 /* AppDelegate.swift */; };
-		0B3F189D1FAA529300EE3033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F189C1FAA529300EE3033 /* ViewController.swift */; };
 		0B3F18A01FAA529300EE3033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F189E1FAA529300EE3033 /* Main.storyboard */; };
 		0B3F18A21FAA529300EE3033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F18A11FAA529300EE3033 /* Assets.xcassets */; };
 		0B3F18A51FAA529300EE3033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F18A31FAA529300EE3033 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		0B3F18971FAA529300EE3033 /* RealtorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3F189A1FAA529300EE3033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B3F189C1FAA529300EE3033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B3F189F1FAA529300EE3033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3F18A11FAA529300EE3033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B3F18A41FAA529300EE3033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			children = (
 				0B3F189E1FAA529300EE3033 /* Main.storyboard */,
 				0B3F189A1FAA529300EE3033 /* AppDelegate.swift */,
-				0B3F189C1FAA529300EE3033 /* ViewController.swift */,
 				0B3F18CA1FAA864B00EE3033 /* Cells */,
 				0B3F18C71FAA632000EE3033 /* Services */,
 				0B3F18BA1FAA5ED300EE3033 /* Scenes */,
@@ -300,7 +297,6 @@
 				0B3F18B01FAA5BC900EE3033 /* DetailsVC.swift in Sources */,
 				0B3F18B51FAA5E3E00EE3033 /* RealtorListVC.swift in Sources */,
 				0B3F18C21FAA5F1400EE3033 /* SceneCoordinator.swift in Sources */,
-				0B3F189D1FAA529300EE3033 /* ViewController.swift in Sources */,
 				0B3F18C41FAA5F2500EE3033 /* BindableType.swift in Sources */,
 				0B3F18B91FAA5ECA00EE3033 /* Scene.swift in Sources */,
 				0B3F18B71FAA5E4E00EE3033 /* RealtorListVM.swift in Sources */,
