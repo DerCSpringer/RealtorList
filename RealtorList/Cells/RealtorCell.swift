@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RealtorCell: UITableViewCell { }
 
@@ -14,5 +15,6 @@ extension RealtorCell {
     func configureWithRealtor(_ realtor: Realtor) {
         self.textLabel?.text = (realtor.firstName ?? "") + " " +  (realtor.lastName ?? "")
         self.detailTextLabel?.text = realtor.phoneNumber ?? ""
+        self.imageView?.kf.setImage(with: realtor.thumbnail)
     }
 }

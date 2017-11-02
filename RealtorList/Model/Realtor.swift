@@ -9,14 +9,24 @@
 import Foundation
 
 struct Realtor {
-    // Looks like lastName can be null or "".  Make sure to correct for this
-    // There is one title with "", so also check for that
     let firstName: String?
     let lastName: String?
-    let photo: URL?
+    private let photo: String?
     let phoneNumber: String?
     let officeName: String?
     let title: String?
+    var thumbnail: URL? {
+        get {
+            guard let photo = photo else { return nil }
+            return URL.init(string: photo + "/width/50")
+        }
+    }
+    var largerPhoto: URL? {
+        get {
+            guard let photo = photo else { return nil }
+            return URL.init(string: photo + "/width/200")
+        }
+    }
 }
 
 extension Realtor: Decodable {
@@ -36,7 +46,7 @@ extension Realtor: Decodable {
         let title: String? = try? container.decode(String.self, forKey: .title)
         let phoneNumber: String? = try? container.decode(String.self, forKey: .phoneNumber)
         let officeName: String? = try? container.decode(String.self, forKey: .officeName)
-        let photo: URL? = try? container.decode(URL.self, forKey: .photo)
+        let photo: String? = try? container.decode(String.self, forKey: .photo)
         
         self.init(firstName: firstName,
                   lastName: lastName,
