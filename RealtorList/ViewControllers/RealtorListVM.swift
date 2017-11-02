@@ -39,7 +39,7 @@ class RealtorListVM {
         sceneCoordinator.transition(to: .detailsForRealtor(detailsVM), type: .modal)
     }
     
-    func realtorAtIndexPath(_ indexPath: IndexPath) -> Realtor {
+    func realtorAt(indexPath: IndexPath) -> Realtor {
         return realtorList[indexPath.row]
     }
     

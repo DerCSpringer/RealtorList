@@ -30,7 +30,7 @@ class RealtorListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "realtorCell", for: indexPath) as! RealtorCell
-        cell.configureWithRealtor(viewModel.realtorAtIndexPath(indexPath))
+        cell.configureWithRealtor(viewModel.realtorAt(indexPath: indexPath))
         return cell
     }
     
