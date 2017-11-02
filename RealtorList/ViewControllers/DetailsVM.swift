@@ -26,4 +26,8 @@ class DetailsVM {
         self.photo = realtor.largerPhoto
     }
     
+    func pop() {
+        sceneCoordinator.pop()
+    }
+    
 }

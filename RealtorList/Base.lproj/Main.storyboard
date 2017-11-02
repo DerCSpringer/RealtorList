@@ -132,7 +132,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="raT-0x-ce8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xzy-VS-2pT"/>
+                    <navigationItem key="navigationItem" id="xzy-VS-2pT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Fle-Jh-rY8">
+                            <connections>
+                                <action selector="done:" destination="8am-7T-IP2" id="7ax-bO-4wD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="companyTitle" destination="uiq-iK-6SF" id="ZIC-T4-X0O"/>
                         <outlet property="name" destination="39R-b9-Ha5" id="HK2-IF-C1X"/>

@@ -33,4 +33,10 @@ class RealtorListVM {
         }
     }
     
+    func touchedRowAt(indexPath: IndexPath) {
+        let realtor = realtorList[indexPath.row]
+        let detailsVM = DetailsVM(sceneCoordinator: self.sceneCoordinator, realtor: realtor)
+        sceneCoordinator.transition(to: .detailsForRealtor(detailsVM), type: .modal)
+    }
+    
 }

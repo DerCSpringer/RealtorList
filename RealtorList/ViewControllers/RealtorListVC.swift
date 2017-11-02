@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
+class RealtorListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, BindableType {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,6 +17,7 @@ class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     func bindViewModel() {
@@ -35,6 +36,10 @@ class RealtorListVC: UIViewController, UITableViewDataSource, BindableType {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.realtorList.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.touchedRowAt(indexPath: indexPath)
     }
     
 }
