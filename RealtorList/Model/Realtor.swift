@@ -15,6 +15,11 @@ struct Realtor {
     let phoneNumber: String?
     let officeName: String?
     let title: String?
+    var fullName: String? {
+        get {
+            return ((firstName ?? "") + " " + (lastName ?? ""))
+        }
+    }
     var thumbnail: URL? {
         get {
             guard let photo = photo else { return nil }
