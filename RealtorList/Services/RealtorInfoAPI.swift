@@ -8,7 +8,8 @@
 
 import Foundation
 
-enum Result<Realtor> {
+// Hard coded result
+enum Result {
     case Success([Realtor])
     case Error(FetchingServiceError)
 }
@@ -20,7 +21,7 @@ enum FetchingServiceError: Error {
 }
 
 class RealtorInfoAPI {
-    typealias RealtorListCompletionData = (Result<Realtor>) -> ()
+    typealias RealtorListCompletionData = (Result) -> ()
     
     private let baseURL = URL(string: "https://www.denverrealestate.com/rest.php/mobile/realtor/list?app_key=f7177163c833dff4b38fc8d2872f1ec6")
     
