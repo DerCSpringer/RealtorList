@@ -23,7 +23,10 @@ class DetailsVC: UIViewController, BindableType {
     }
     
     func bindViewModel() {
-        
+        self.photo.kf.setImage(with: viewModel.photo)
+        self.name.text = viewModel.name
+        self.phoneNumber.text = viewModel.phoneNumber
+        self.companyTitle.text = viewModel.title
     }
     
 }
